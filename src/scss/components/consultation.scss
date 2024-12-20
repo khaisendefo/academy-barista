@@ -1,0 +1,30 @@
+.consultation {
+  padding: 70px 0;
+  background-color: var(--pine-cone-600);
+
+  &__title {
+    color: var(--white-color);
+  }
+
+  &__form { 
+    &-wrapper {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &-button {
+      background-color: var(--pine-cone-800);
+    }
+
+    &-text {
+      color: var(--white-color);
+
+      & a {
+        text-decoration: underline;
+        color: var(--white-color);
+      }
+    }
+  }
+}

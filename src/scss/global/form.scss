@@ -1,0 +1,30 @@
+.form {
+  width: 100%;
+
+  &__label {
+    width: 100%;
+  }
+
+  &__input {
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  &__button {
+    @include flex-all-center;
+    width: 100%;
+  }
+
+  &__chek {
+    @include flex-align-center;
+    gap: 8px;
+
+    &-chekbox {
+      border-radius: 6px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

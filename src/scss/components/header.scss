@@ -1,0 +1,185 @@
+.header {
+  display: block;
+
+  &__top {
+    &-container {
+      @include flex-all-between;
+    }
+
+    &-content {
+      @include flex-align-center;
+      gap: 50px;
+    }
+  }
+
+  &__information {
+    @include flex-align-center;
+    gap: 20px;
+
+    &-address {
+      @include flex-align-center;
+      gap: 5px;
+
+      &-icon {
+        width: 20px;
+
+        & path {
+          stroke: var(--dark-color);
+        }
+      }
+
+      &-text {
+        font-style: normal;
+      }
+    }
+
+    &-tel {
+      @include flex-align-center;
+      gap: 5px;
+
+      &-icon {
+        width: 20px;
+
+        & path {
+          stroke: var(--dark-color);
+        }
+      }
+
+      &-number {
+        font-style: normal;
+        color: var(--dark-color);
+      }
+    }
+
+    &-email {
+      @include flex-align-center;
+      gap: 5px;
+
+      &-icon {
+        width: 20px;
+
+        & path {
+          stroke: var(--dark-color);
+        }
+      }
+
+      &-number {
+        font-style: normal;
+        color: var(--dark-color);
+      }
+    }
+  }
+
+  &__social {
+    @include flex-align-center;
+    gap: 15px;
+
+    &-link {
+      position: relative;
+    }
+
+    &-icon {
+      width: 30px;
+      height: 30px;
+
+      & rect {
+        fill: var(--pine-cone-600);
+      }
+
+      &--telegram {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__row {
+    border-top: 1px solid var(--dark-color);
+
+    &-container {
+      @include flex-all-between;
+    }
+  }
+
+  &__submenu {
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      position: relative;
+      transition: all 1s;
+    }
+
+    &-switch {
+      @include flex-align-center;
+      gap: 8px;
+      border-bottom: 1px solid var(--earthy-brown-color);
+      padding: 10px 20px;
+      cursor: pointer;
+
+      &--barista {
+        border-right: 1px solid var(--earthy-brown-color);
+        border-left: 1px solid var(--earthy-brown-color);
+      }
+
+      &--master {
+        border-right: 1px solid var(--earthy-brown-color);
+      }
+
+      &--bar {
+        border-right: 1px solid var(--earthy-brown-color);
+      }
+
+      &-icon {
+        width: 12px;
+      }
+      
+    }
+
+    &-dropdown {
+      position: absolute;
+      top: 50px;
+      z-index: 10;
+      overflow: hidden;
+      border-radius: 7px;
+      background-color: var(--pine-cone-700); 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, visibility 0s .3s;
+
+      &-link {
+        display: block;
+        border-bottom: 1px solid var(--earthy-brown-color);
+        padding: 15px 20px;
+        width: auto;
+        min-width: 270px;
+        color: var(--white-color);
+        transition: background-color var(--transition);
+
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--pine-cone-950);
+        }
+
+        &:hover {
+          background-color: var(--earthy-brown-color);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    &-item:hover &-dropdown {
+      opacity: 1; 
+      visibility: visible; 
+      transition-delay: .3s;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 25px;
+    }
+  }
+}
