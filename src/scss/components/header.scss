@@ -143,7 +143,8 @@
       z-index: 10;
       overflow: hidden;
       border-radius: 7px;
-      background-color: var(--pine-cone-700); 
+      box-shadow: 0 1px 8px #00000082;
+      background-color: var(--white-color); 
       opacity: 0;
       visibility: hidden;
       transition: opacity .3s ease, visibility 0s .3s;
@@ -154,7 +155,7 @@
         padding: 15px 20px;
         width: auto;
         min-width: 270px;
-        color: var(--white-color);
+        color: var(--dark-color);
         transition: background-color var(--transition);
 
         &:not(:last-child) {
@@ -162,9 +163,14 @@
         }
 
         &:hover {
-          background-color: var(--earthy-brown-color);
+          color: var(--white-color);
+          background-color: var(--pine-cone-700);
           opacity: 1;
           visibility: visible;
+        }
+
+        &:active {
+          background-color: var(--pine-cone-950);
         }
       }
     }

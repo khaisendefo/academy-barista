@@ -1,0 +1,51 @@
+.advantages {
+  position: relative;
+
+  &__vertical-text {
+    position: absolute;
+    top: 40%;
+    right: -50px;
+  }
+
+  &__information {
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      margin-bottom: 50px;
+    }
+
+    &-button {
+      padding: 20px 40px;
+    }
+  }
+
+  &__content {
+    @include flex-between;
+    position: relative;
+    gap: 15px;
+  }
+
+  &__right {
+    max-width: 800px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+
+    &-item {
+      border-bottom: 2px solid var(--pine-cone-600);
+      padding: 0 30px 30px;
+    }
+
+    &-number {
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 3em;
+    }
+  }
+}

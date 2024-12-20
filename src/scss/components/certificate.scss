@@ -1,0 +1,58 @@
+.certificate {
+  &__inner {
+    position: relative;
+  }
+
+  &__vertical-text {
+    position: absolute;
+    top: 40%;
+    right: -70px;
+  }
+  
+  &__card {
+    @include flex-between;
+    gap: 15px;
+
+    &-information {
+      max-width: 600px;
+    }
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      margin-bottom: 50px;
+    }
+
+    &-button {
+      padding: 20px 40px;
+    }
+
+    &-image {
+      position: relative;
+      width: 100%;
+      
+      &-one {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(-15deg);
+      }
+
+      &-two {
+        position: absolute;
+        bottom: -80px;
+        left: 150px;
+        z-index: -1;
+        transform: rotate(-5deg);
+      }
+
+      & img {
+        border-radius: 10px;
+        width: 500px;
+        height: 300px;
+      }
+    }
+  }
+}
