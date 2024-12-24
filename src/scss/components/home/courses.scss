@@ -1,0 +1,118 @@
+.courses {
+  display: block;
+
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+
+    &-button {
+      border: 1px solid var(--pine-cone-600);
+      border-radius: 30px;
+      padding: 10px 18px;
+      transition: background-color var(--transition), color var(--transition);
+
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--pine-cone-600);
+      }
+
+      &:active {
+        background-color: var(--pine-cone-950);
+      }
+
+      &-is-active {
+        color: var(--white-color);
+        background-color: var(--pine-cone-600);
+      }
+    }
+  }
+
+  &__body {
+    margin-bottom: 30px;
+
+    &-content {
+      display: none;
+
+      &-is-active {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  
+  &__card {
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    padding: 30px;
+
+    &-icon path {
+      stroke: var(--dark-color);
+    }
+
+    &-description {
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+
+    &-list {
+      @include flex-column;
+      gap: 15px;
+      margin-bottom: 35px;
+      width: 100%;
+    }
+
+    &-item {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+    }
+
+    &-information {
+      @include flex-all-between;
+      width: 100%;
+    }
+
+    &-prise {
+      margin-bottom: 30px;
+
+      & path {
+        stroke: var(--dark-color);
+      }
+    }
+
+    &-sum {
+      font-weight: 700;
+      font-size: 1.4em;
+    }
+
+    &-button {
+      display: block;
+      padding: 18px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 307px;
+    
+    & span {
+      font-weight: 700;
+      text-transform: uppercase;
+      transform: translateY(4px);
+    }
+  }
+}

@@ -17,6 +17,22 @@
       transition: stroke var(--transition);
     }
   }
+
+  &-transparent {
+    border: 2px solid var(--pine-cone-600);
+    color: var(--pine-cone-600);
+    transition: background-color var(--transition);
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--pine-cone-700);
+    }
+
+    &:active {
+      border: 2px solid var(--pine-cone-950);
+      background-color: var(--pine-cone-950);
+    }
+  }
   
   &-brown {
     color: var(--white-color);

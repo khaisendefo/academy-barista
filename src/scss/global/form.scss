@@ -6,10 +6,25 @@
   }
 
   &__input {
+    border: 1px solid var(--pine-cone-950);
     border-radius: 6px;
     padding: 20px;
     width: 100%;
     font-size: 1.1em;
+    background-color: transparent;
+  }
+
+  &__textarea {
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: var(--white-color);
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__button {

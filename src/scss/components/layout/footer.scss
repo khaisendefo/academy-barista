@@ -1,0 +1,104 @@
+.footer {
+  &__label {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+
+    @include breakpoint-700 {
+      margin: 0;
+    }
+  }
+
+  &__row {
+    @include flex-between;
+    padding-bottom: 30px;
+
+    @include breakpoint-900 {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint-700 {
+      gap: 15px;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &__column {
+    @include breakpoint-700 {
+      border: 1px solid var(--dark-color);
+      border-radius: 10px;
+      padding: 15px 15px 0;
+    }
+  }
+
+  &__accordion {
+    @include breakpoint-700 {
+      @include flex-all-between;
+      padding-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    transition: transform var(--accordion-transtion);
+
+    & svg {
+      width: 14px;
+      height: 14px;
+      white-space: nowrap;
+    }
+
+    & path {
+      fill: var(--dark-color);
+    }
+
+    &.active {
+      transform: rotate(90deg);
+    }
+
+    &.active path {
+       fill: var(--dark-color);
+    }
+
+    @include breakpoint-700 {
+      display: block;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 10px;
+
+    @include breakpoint-700 {
+      overflow: hidden;
+      padding-top: 0;
+      max-height: 0;
+      transition: max-height var(--accordion-transtion), margin-bottom var(--accordion-transtion);
+
+      &.active {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 1em;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__bottom {
+    @include flex-all-between;
+    padding: 15px 0 0;
+  }
+
+  &__copyright {
+    font-size: 1em;
+    color: var(--dark-color);
+  }
+}

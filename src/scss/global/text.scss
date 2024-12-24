@@ -52,8 +52,8 @@
 .heading {
   &-title {
     &-general {
-      font-weight: 600;
-       font-size: 2.7em;
+      font-weight: 800;
+       font-size: 2.8em;
        line-height: 1.3;
        text-transform: uppercase;
     }
@@ -74,6 +74,14 @@
       color: var(--pine-cone-600);
       opacity: 0.1;
       transform: rotate(90deg);
+    }
+
+    &-name {
+      margin-bottom: 15px;
+      font-weight: 700;
+       font-size: 1.5em;
+       line-height: 1.3;
+       text-transform: uppercase;
     }
   }
 }

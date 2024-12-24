@@ -4,10 +4,17 @@
 
 
 // components
-@import './components/header';
+@import './components/layout/header';
 @import './components/home/hero';
-@import './components/consultation';
+@import './components/home/courses';
+@import './components/shared/consultation';
+@import './components/shared/team';
 @import './components/home/advantages';
-@import './components/certificate';
+@import './components/shared/certificate';
+@import './components/shared/blog';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
 
 
