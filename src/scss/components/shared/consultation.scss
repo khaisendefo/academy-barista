@@ -1,12 +1,36 @@
 .consultation {
+  @include breakpoint-700 {
+    background-color: var(--pine-cone-600);
+  }
+
   &__content {
-    border: 1px solid var(--pine-cone-600);
     border-radius: 10px;
     padding: 30px;
+    background-color: var(--pine-cone-600);
+
+    @include breakpoint-900 {
+      padding: 23px;
+    }
+
+    @include breakpoint-700 {
+      border-radius: initial;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    & br {
+      @include breakpoint-800 {
+        display: none;
+      }
+    }
   }
 
   &__title {
-    color: var(--pine-cone-950);
+    color: var(--white-color);
+
+    @include breakpoint-1000 {
+      margin-bottom: 20px;
+    }
   }
 
   &__form { 
@@ -15,6 +39,23 @@
       gap: 20px;
       justify-content: space-between;
       margin-bottom: 20px;
+
+      @include breakpoint-1200 {
+        gap: 10px;
+      }
+
+      @include breakpoint-1100 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint-600 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    &-input {
+      background-color: var(--white-color);
     }
 
     &-button {

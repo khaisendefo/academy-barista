@@ -18,6 +18,10 @@
 
   &__overlay {
     background-color: #000000c3;
+
+    @include breakpoint-500 {
+      background-color: transparent;
+    }
   }
 
   &__inner {
@@ -25,12 +29,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-500 {
+      background-color: var(--white-color);
+    }
   }
 
   &__window {
     border-radius: 10px;
     padding: 30px;
-    width: 450px;
+    width: 480px;
     background-color: var(--white-color);
     animation: modal .5s ease-in-out;
   }
@@ -47,8 +55,10 @@
     top: 30px;
     right: 30px;
 
-    & path {
-      fill: var(--white-color);
+    & rect {
+      @include breakpoint-500 {
+        fill: var(--dark-color);
+      }
     }
   }
 

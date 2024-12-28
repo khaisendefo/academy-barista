@@ -9,43 +9,88 @@
 
   &__information {
     &-title {
-      margin-bottom: 20px;
-    }
+      margin-bottom: 30px;
 
-    &-description {
-      margin-bottom: 50px;
-    }
-
-    &-button {
-      padding: 20px 40px;
+      @include breakpoint-1200 {
+        margin-bottom: 25px;
+      }
     }
   }
 
   &__content {
-    @include flex-between;
     position: relative;
     gap: 15px;
-  }
-
-  &__right {
-    max-width: 800px;
   }
 
   &__grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 40px;
 
+    @include breakpoint-1400 {
+      gap: 20px;
+    }
+
+    @include breakpoint-1200 {
+      margin-bottom: 25px;
+    }
+
+    @include breakpoint-1000 {
+      gap: 15px;
+    }
+
+    @include breakpoint-900 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-600 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     &-item {
-      border-bottom: 2px solid var(--pine-cone-600);
-      padding: 0 30px 30px;
+      border: 1px solid var(--pine-cone-600);
+      border-radius: 10px;
+      padding: 30px;
+
+      @include breakpoint-1100 {
+        padding: 25px;
+      }
+
+      @include breakpoint-900 {
+        padding: 20px;
+      }
+    }
+
+    &-description {
+      & br {
+        @include breakpoint-1100 {
+          display: none;
+        }
+      }
     }
 
     &-number {
       margin-bottom: 15px;
       font-weight: 600;
       font-size: 3em;
+
+      @include breakpoint-1100 {
+        font-size: 2.5em;
+      }
+
+      @include breakpoint-900 {
+        margin-bottom: 10px;
+        font-size: 2.3em;
+      }
+
+      @include breakpoint-600 {
+        font-size: 2em;
+      }
+
+      @include breakpoint-500 {
+        font-size: 1.8em;
+      }
     }
   }
 }

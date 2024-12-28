@@ -1,13 +1,12 @@
 .header-burger {
   position: relative;
-  z-index: var(--z-index-6);
   display: none;
   padding: 12px 0;
   background: transparent;
   transition: all 0.3s;
   cursor: pointer;
 
-  @include breakpoint-1200 {
+  @include breakpoint-1300 {
     display: inline-block;
     order: 3;
   }
@@ -19,7 +18,7 @@
     border-radius: 30px;
     width: 20px;
     height: 2px;
-    background: var(--neutral-color-20);
+    background: var(--pine-cone-950);
     transition: all 0.3s;
     cursor: pointer;
 
@@ -30,7 +29,7 @@
       border-radius: 30px;
       width: 25px;
       height: 2px;
-      background: var(--neutral-color-20);
+      background: var(--pine-cone-950);
       transition: all 0.3s;
       cursor: pointer;
     }
@@ -41,22 +40,6 @@
 
     &::after {
       top: 8px;
-    }
-  }
-
-  &.active {
-    span {
-      background: transparent;
-  
-      &::before {
-        background: var(--neutral-color-20);
-        transform: rotate(45deg) translate(5px, 6px);
-      }
-  
-      &::after {
-        background: var(--neutral-color-20);
-        transform: rotate(-45deg) translate(5px, -6px);
-      }
     }
   }
 }

@@ -1,14 +1,49 @@
 .header {
   display: block;
 
+  @include breakpoint-1300 {
+    height: 74px;
+  }
+
+  &__fixed {
+    @include breakpoint-1300 {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      width: 100%;
+      background-color: var(--white-color);
+      opacity: 1;  // Начальная видимость
+      transition: top var(--transition), opacity var(--transition);
+    }
+  
+    &-hidden {
+      @include breakpoint-1300 {
+        top: -100%;
+        opacity: 0;
+        transition: top var(--transition), opacity var(--transition);
+      }
+    }
+  }
+  
+
   &__top {
+    @include breakpoint-1300 {
+      border-bottom: 1px solid;
+    }
+
     &-container {
       @include flex-all-between;
+      gap: 40px;
     }
 
     &-content {
       @include flex-align-center;
       gap: 50px;
+
+      @include breakpoint-1300 {
+        display: none;
+      }
     }
   }
 
@@ -96,8 +131,54 @@
   &__row {
     border-top: 1px solid var(--dark-color);
 
+    @include breakpoint-1300 {
+      display: none;
+    }
+
     &-container {
       @include flex-all-between;
+    }
+  }
+
+  &__messenge {
+    display: none;
+
+    @include breakpoint-1300 {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      max-height: 33px;
+    }
+
+    &-likk {
+      display: block;
+      max-width: 33px;
+      max-height: 33px;
+    }
+
+    &-icon {
+      width: 33px;
+      height: 33px;
+      transform: translateY(2px);
+      
+      &-telegram {
+        width: 31px;
+        height: 31px;
+        transform: translateY(3px);
+      }
+
+      &-tel {
+        width: 30px;
+        height: 30px;
+      }
+
+      &-whatsapp path, &-tel path {
+        fill: var(--pine-cone-600);
+      }
+
+      & rect {
+        fill: var(--pine-cone-600);
+      }
     }
   }
 

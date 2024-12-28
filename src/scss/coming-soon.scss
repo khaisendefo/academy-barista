@@ -1,0 +1,19 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+.body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

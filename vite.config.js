@@ -16,6 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
+        comingSoon: './src/coming-soon.html',
       },
     },
   },
