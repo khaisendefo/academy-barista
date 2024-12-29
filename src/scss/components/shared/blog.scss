@@ -22,16 +22,21 @@
 
     @include breakpoint-900 {
       gap: 30px;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 300px);
+      overflow-x: auto;
     }
 
-    @include breakpoint-700 {
-      gap: 15px;
+    &::-webkit-scrollbar {
+      height: 0; 
     }
 
-    @include breakpoint-600 {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    // @include breakpoint-700 {
+    //   gap: 15px;
+    // }
+
+    // @include breakpoint-600 {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
   }
 
   &__article {

@@ -73,11 +73,22 @@
     }
 
     &-item {
-      display: flex;
+      @include flex-align-center;
       gap: 8px;
-      align-items: center;
+
+      &::before {
+        content: '';
+        display: block;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: var(--cream-white-color);
+        transform: translateY(-1px);
+      }
 
       & svg {
+        display: none;
+
         @include breakpoint-700 {
           width: 18px;
           height: 18px;

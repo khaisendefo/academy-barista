@@ -82,7 +82,24 @@
         }
 
         @include breakpoint-800 {
-          grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(3, 450px);
+          overflow-x: auto;
+        }
+
+        @include breakpoint-600 {
+          grid-template-columns: repeat(3, 440px);
+        }
+
+        @include breakpoint-500 {
+          grid-template-columns: repeat(3, 365px);
+        }
+
+        @include breakpoint-400 {
+          grid-template-columns: repeat(3, 340px);
+        }
+
+        &::-webkit-scrollbar {
+          height: 0; 
         }
       }
     }
