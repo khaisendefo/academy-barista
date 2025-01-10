@@ -1,0 +1,12 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/courses/courses';
+@import './components/shared/blog';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';

@@ -1,0 +1,207 @@
+.courses {
+  display: block;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include breakpoint-800 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav {
+    @include flex-align-center;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+      height: 0; 
+    }
+
+    &-button {
+      border: 1px solid var(--pine-cone-600);
+      border-radius: 30px;
+      padding: 10px 18px;
+      color: var(--dark-color);
+      transition: background-color var(--transition), color var(--transition);
+
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--pine-cone-600);
+      }
+
+      &:active {
+        background-color: var(--pine-cone-950);
+      }
+
+      &-is-active {
+        color: var(--white-color);
+        background-color: var(--pine-cone-600);
+      }
+    }
+  }
+
+  &__body {
+    &-wrapper {
+      padding: 30px 0;
+
+      @include breakpoint-800 {
+        padding: 22px 0;
+      }
+    }
+
+    &-content {
+      display: none;
+
+      &-is-active {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include breakpoint-1200 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-800 {
+          grid-template-columns: repeat(3, 450px);
+          overflow-x: auto;
+        }
+
+        @include breakpoint-600 {
+          grid-template-columns: repeat(3, 440px);
+        }
+
+        @include breakpoint-500 {
+          grid-template-columns: repeat(3, 365px);
+        }
+
+        @include breakpoint-400 {
+          grid-template-columns: repeat(3, 340px);
+        }
+
+        &::-webkit-scrollbar {
+          height: 0; 
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__card {
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    padding: 30px;
+
+    @include breakpoint-900 {
+      padding: 22px;
+    }
+
+    &-icon path {
+      stroke: var(--dark-color);
+    }
+
+    &-name {
+      & br {
+        @include breakpoint-1200 {
+          display: none;
+        }
+      }
+    }
+
+    &-description {
+      height: 160px;
+      font-size: 1em;
+
+      @include breakpoint-900 {
+        height: 130px;
+      }
+
+      @include breakpoint-800 {
+        height: 100px;
+      }
+
+      @include breakpoint-600 {
+        height: 130px;
+      }
+
+      @include breakpoint-500 {
+        margin-bottom: 20px;
+        height: auto;
+      }
+    }
+
+    &-list {
+      @include flex-column;
+      gap: 15px;
+      margin-bottom: 35px;
+      width: 100%;
+    }
+
+    &-item {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+    }
+
+    &-information {
+      @include flex-all-between;
+      position: relative;
+      width: 100%;
+
+      @include breakpoint-500 {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      &-prise {
+        @include breakpoint-500 {
+          display: flex;
+          flex-direction: initial;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    &-prise {
+      margin-bottom: 30px;
+
+      & path {
+        stroke: var(--dark-color);
+      }
+    }
+
+    &-sum {
+      font-weight: 700;
+      font-size: 1.4em;
+
+      @include breakpoint-500 {
+        font-size: 1.2em;
+      }
+
+      &-old {
+        position: absolute;
+        top: -20px;
+        right: 0;
+        font-size: 0.9em;
+        text-decoration: line-through;
+        opacity: 0.7;
+
+        @include breakpoint-500 {
+          top: -10px;
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    &-button {
+      display: block;
+      padding: 18px;
+      text-align: center;
+    }
+  }
+}

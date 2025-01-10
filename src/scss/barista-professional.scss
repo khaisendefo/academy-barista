@@ -1,0 +1,25 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/courses/barista-professional/hero';
+@import './components/courses/barista-professional/course-composition';
+@import './components/courses/barista-professional/learn';
+@import './components/shared/team';
+@import './components/courses/barista-professional/gallery';
+@import './components/courses/barista-professional/want-course';
+@import './components/courses/barista-professional/courses';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.team {
+  background-color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}

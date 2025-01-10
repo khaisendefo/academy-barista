@@ -17,6 +17,10 @@ export default defineConfig({
       input: {
         main: './src/index.html',
         comingSoon: './src/coming-soon.html',
+        courses: './src/courses.html',
+        baristaBase: './src/courses/barista-base.html',
+        baristaAdvanced: './src/courses/barista-advanced.html',
+        baristaProfessional: './src/courses/barista-professional.html',
       },
     },
   },
