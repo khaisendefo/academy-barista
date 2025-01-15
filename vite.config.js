@@ -22,6 +22,8 @@ export default defineConfig({
         baristaAdvanced: './src/courses/barista-advanced.html',
         baristaProfessional: './src/courses/barista-professional.html',
         masterClassBaristaTakeAwau: './src/master-class/barista-v-take-away.html',
+        masterClassYoungBarista: './src/master-class/young-barista.html',
+        masterClassLatterArt: './src/master-class/latte-art.html',
       },
     },
   },
