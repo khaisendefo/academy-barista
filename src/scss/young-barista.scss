@@ -1,0 +1,25 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/master-class/young-barista/hero';
+@import './components/master-class/young-barista/course-composition';
+@import './components/master-class/young-barista/learn';
+@import './components/shared/team';
+@import './components/master-class/young-barista/gallery';
+@import './components/master-class/young-barista/want-course';
+@import './components/master-class/young-barista/courses';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.team {
+  background-color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}

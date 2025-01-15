@@ -1,0 +1,152 @@
+.course-composition {
+  display: block;
+  background-color: #f6f6f6;
+
+
+  &__content {
+    @include flex-between; 
+    gap: 30px;
+
+    @include breakpoint-1300 {
+      gap: 15px;
+    }
+
+    @include breakpoint-1000 {
+      flex-direction: column;
+    }
+  }
+  
+  &__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 70px 50px;
+    width: 100%;
+
+    @include breakpoint-1300 {
+      padding: 60px 40px;
+    }
+
+    @include breakpoint-1000 {
+      padding: 50px 30px;
+    }
+
+    @include breakpoint-700 {
+      padding: 40px 30px;
+    }
+
+    &-description {
+      color: var(--white-color);
+    }
+
+    &-icon {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      opacity: 0.2;
+
+      @include breakpoint-600 {
+        right: 10px;
+      }
+
+      &-practice {
+        top: 15px;
+      }
+
+      & svg {
+        width: 130px !important;
+        height: 130px !important;
+
+        @include breakpoint-1000 {
+          width: 110px !important;
+          height: 110px !important;
+        }
+
+        @include breakpoint-700 {
+          width: 90px !important;
+          height: 90px !important;
+        }
+
+        @include breakpoint-600 {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    }
+
+    &-theory {
+      border: 1px solid var(--dark-color);
+      color: var(--dark-color);
+      background-color: var(--white-color);
+
+      & svg {
+        min-width: 25px;
+        min-height: 25px;
+        max-width: 25px;
+        max-height: 25px;
+      }
+
+      & circle {
+        fill: var(--pine-cone-600);
+      }
+    }
+
+    &-practice {
+      color: var(--white-color);
+      background-color: var(--pine-cone-600);
+
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      & path {
+        stroke: var(--dark-color);
+      }
+
+      & circle {
+        fill: var(--white-color);
+      }
+    }
+
+    &-title {
+      margin-bottom: 40px;
+
+      @include breakpoint-1000 {
+        margin-bottom: 25px;
+      }
+
+      &-theory {
+        color: var(--dark-color);
+      }
+    }
+
+    &-list {
+      @include flex-column;
+      gap: 15px;
+
+      &-practice li {
+        color: var(--white-color);
+      }
+    }
+
+    &-item {
+      @include flex-align-center;
+      gap: 8px;
+
+      @include breakpoint-1300 {
+        align-items: start;
+      }
+
+      & svg {
+        @include breakpoint-700 {
+          min-width: 20px;
+          min-height: 20px;
+          max-width: 20px;
+          max-height: 20px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

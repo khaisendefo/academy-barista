@@ -1,0 +1,84 @@
+.learn {
+  display: block;
+
+  &__list {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint-1200 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-800 {
+      gap: 25px;
+    }
+
+    @include breakpoint-700 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+
+    @include breakpoint-1200 {
+      align-items: start;
+    }
+
+    @include breakpoint-700 {
+      gap: 8px;
+      align-items: center;
+    }
+  }
+  
+  &__info {
+    @include flex-column;
+    gap: 15px;
+
+    &-label {
+      font-weight: 700;
+    }
+
+    &-list {
+      @include flex-column;
+      gap: 10px;
+    }
+
+    &-item {
+      display: inline-flex;
+      gap: 8px;
+
+      & svg {
+        min-width: 21px;
+        min-height: 21px;
+        max-width: 21px;
+        max-height: 21px;
+
+        @include breakpoint-500 {
+          min-width: 18px;
+          min-height: 18px;
+          max-width: 18px;
+          max-height: 18px;
+        }
+
+        & circle {
+          min-width: 21px;
+          min-height: 21px;
+          max-width: 21px;
+          max-height: 21px;
+          fill: var(--pine-cone-600);
+  
+          @include breakpoint-500 {
+            min-width: 18px;
+            min-height: 18px;
+            max-width: 18px;
+            max-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
