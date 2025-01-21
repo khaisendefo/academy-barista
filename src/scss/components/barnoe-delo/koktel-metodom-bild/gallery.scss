@@ -1,0 +1,76 @@
+.gallery {
+  display: block;
+
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 30px;
+
+    @include breakpoint-700 {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__nav {
+    @include flex-align-center;
+    gap: 10px;
+
+    &-arrow {
+      position: relative;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: var(--pine-cone-600);
+      transition: opacity var(--transition);
+      cursor: pointer;
+
+      @include breakpoint-700 {
+        width: 35px;
+        height: 35px;
+      } 
+
+      &--is-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:hover {
+        background-color: var(--pine-cone-700);
+      }
+  
+      &:active {
+        background-color: var(--pine-cone-950);
+      }
+
+      & svg {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translate(50%, -50%);
+
+        @include breakpoint-700 {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    &-link {
+      display: block;
+      border-radius: 10px;
+      width: 100%;
+
+      & img {
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+  }
+}

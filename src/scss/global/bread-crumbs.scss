@@ -6,9 +6,17 @@
   }
 
   &__nav {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0; 
+    }
+
     &-list {
       @include flex-align-center;
       gap: 10px;
+      white-space: nowrap;
 
       & span {
         transform: translateY(2px);

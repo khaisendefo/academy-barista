@@ -1,0 +1,25 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/barnoe-delo/metod-ctir/hero';
+@import './components/barnoe-delo/metod-ctir/course-composition';
+@import './components/barnoe-delo/metod-ctir/learn';
+@import './components/shared/team';
+@import './components/barnoe-delo/metod-ctir/gallery';
+@import './components/barnoe-delo/metod-ctir/want-course';
+@import './components/barnoe-delo/metod-ctir/courses';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.team {
+  background-color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}

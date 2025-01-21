@@ -24,6 +24,9 @@ export default defineConfig({
         masterClassBaristaTakeAwau: './src/master-class/barista-v-take-away.html',
         masterClassYoungBarista: './src/master-class/young-barista.html',
         masterClassLatterArt: './src/master-class/latte-art.html',
+        barnoeDeloVstryakhniIpoday: './src/barnoe-delo/vstryakhni-i-poday.html',
+        barnoeDeloKoktelMetodomBild: './src/barnoe-delo/koktel-metodom-bild.html',
+        barnoeDeloKoktelMetodomCtir: './src/barnoe-delo/metod-ctir.html'
       },
     },
   },

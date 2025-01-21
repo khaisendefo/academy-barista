@@ -1,0 +1,25 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/barnoe-delo/koktel-metodom-bild/hero';
+@import './components/barnoe-delo/koktel-metodom-bild/course-composition';
+@import './components/barnoe-delo/koktel-metodom-bild/learn';
+@import './components/shared/team';
+@import './components/barnoe-delo/koktel-metodom-bild/gallery';
+@import './components/barnoe-delo/koktel-metodom-bild/want-course';
+@import './components/barnoe-delo/koktel-metodom-bild/courses';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.team {
+  background-color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}
