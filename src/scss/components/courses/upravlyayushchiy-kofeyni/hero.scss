@@ -5,7 +5,6 @@
   &__container {
     position: relative;
     display: flex;
-    align-items: start;
     justify-content: space-between;
 
     @include breakpoint-900 {
@@ -22,18 +21,18 @@
       width: 450px;
 
       @include breakpoint-1400 {
-        top: 45%;
-        width: 500px;
+        top: 30%;
       }
 
       @include breakpoint-1100 {
-        width: 450px;
+        right: -30px;
+        width: 400px;
       }
 
       @include breakpoint-1000 {
-        top: 50%;
+        top: 57%;
         right: -30px;
-        width: 400px;
+        width: 380px;
       }
 
       @include breakpoint-900 {
@@ -50,16 +49,6 @@
 
   &__title {
     margin-bottom: 10px;
-
-    & br {
-      @include breakpoint-1400 {
-        display: none;
-      }
-
-      @include breakpoint-900 {
-        display: inline-block;
-      }
-    }
   }
 
   &__description {
@@ -82,12 +71,14 @@
     width: 100%;
 
     @include breakpoint-1400 {
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       max-width: 600px;
     }
 
     @include breakpoint-800 {
       gap: 30px;
+      grid-template-columns: repeat(1, 1fr);
     }
 
     & path {
@@ -210,17 +201,9 @@
 
     &-info {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-direction: column;
-      width: 280px;
-
-      @include breakpoint-800 {
-        width: 250px;
-      }
-
-      @include breakpoint-500 {
-        width: 230px;
-      }
+      width: 220px;
 
       & span {
         line-height: 1;
@@ -229,22 +212,13 @@
 
     &-row {
       display: flex;
-      gap: 10px;
+      gap: 5px;
       justify-content: space-between;
-
     }
 
     &-label {
       display: flex;
       gap: 5px;
-    }
-
-    &-row-text {
-      transform: translateY(2px);
-
-      @include breakpoint-800 {
-        transform: translateY(4px);
-      }
     }
 
     &-question {
@@ -253,50 +227,24 @@
 
       &-znak {
         @include flex-all-center;
-        border-radius: 5px;
-        padding: 5px 10px;
-        color: var(--white-color);
-        background-color: var(--pine-cone-600);
-        transform-origin: center;
-        animation: pulseZnak 1s infinite ease-in-out;
-        cursor: pointer;
-
-        @keyframes pulseZnak {
-          0% {
-            transform: scale(0.95);
-          }
-  
-          50% {
-            transform: scale(1);
-          }
-  
-          100% {
-            transform: scale(0.95);
-          }
-        }
-
-        &:hover {
-          animation: initial;
-        }
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: #d9d6d6;
       }
-      
+
       &-popup {
         position: absolute;
-        top: -140px;
+        top: -90px;
         z-index: 10;
         opacity: 0;
         visibility: hidden;
         transition: opacity .1s ease, visibility 0s .1s;
 
-        @include breakpoint-500 {
-          right: 50%;
-          transform: translateX(50%);
-        }
-
         &-inner {
           border-radius: 5px;
           padding: 10px;
-          width: 200px;
+          width: 250px;
           box-shadow: 0 1px 8px 0 #00003c;
           background-color: var(--white-color);
         }
@@ -304,10 +252,6 @@
         & p {
           color: var(--dark-color);
           text-wrap: wrap;
-        }
-
-        & span {
-          font-weight: 700;
         }
       }
     }

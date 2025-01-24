@@ -5,40 +5,28 @@
   &__container {
     position: relative;
     display: flex;
-    align-items: start;
     justify-content: space-between;
-
-    @include breakpoint-900 {
-      gap: 30px;
-      flex-direction: column;
-    }
 
     & img {
       position: absolute;
-      top: 0;
       right: 0;
+      bottom: -130px;
       z-index: -1;
-      border-radius: 10px;
-      width: 450px;
-
-      @include breakpoint-1400 {
-        top: 45%;
-        width: 500px;
-      }
-
-      @include breakpoint-1100 {
-        width: 450px;
-      }
+      width: 400px;
 
       @include breakpoint-1000 {
-        top: 50%;
-        right: -30px;
-        width: 400px;
+        width: 350px;
       }
 
       @include breakpoint-900 {
-        position: static;
-        width: 100%;
+        right: -70px;
+      }
+
+      @include breakpoint-600 {
+        right: -100px;
+        bottom: -120px;
+        width: 300px;
+        opacity: 0.2;
       }
     }
   }
@@ -50,16 +38,6 @@
 
   &__title {
     margin-bottom: 10px;
-
-    & br {
-      @include breakpoint-1400 {
-        display: none;
-      }
-
-      @include breakpoint-900 {
-        display: inline-block;
-      }
-    }
   }
 
   &__description {
@@ -82,12 +60,14 @@
     width: 100%;
 
     @include breakpoint-1400 {
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       max-width: 600px;
     }
 
     @include breakpoint-800 {
       gap: 30px;
+      grid-template-columns: repeat(1, 1fr);
     }
 
     & path {

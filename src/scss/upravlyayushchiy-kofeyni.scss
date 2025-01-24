@@ -1,0 +1,25 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/courses/upravlyayushchiy-kofeyni/hero';
+@import './components/courses/upravlyayushchiy-kofeyni/course-composition';
+@import './components/courses/upravlyayushchiy-kofeyni/learn';
+@import './components/shared/team';
+@import './components/courses/upravlyayushchiy-kofeyni/gallery';
+@import './components/courses/upravlyayushchiy-kofeyni/want-course';
+@import './components/courses/upravlyayushchiy-kofeyni/courses';
+@import './components/shared/contact';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.team {
+  background-color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+}
