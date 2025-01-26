@@ -1,0 +1,108 @@
+.social {
+  display: block;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--white-color);
+
+    @include breakpoint-600 {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  &__card {
+    overflow: hidden;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    padding: 40px;
+    background-color: var(--pine-cone-600);
+
+  }
+
+  &__slider {
+    height: 350px;
+
+    @include breakpoint-1300 {
+      height: 300px;
+    }
+
+    @include breakpoint-1100 {
+      height: 350px;
+    }
+
+    @include breakpoint-700 {
+      height: 250px;
+    }
+
+    @include breakpoint-600 {
+      height: 500px;
+    }
+
+    & .splide__arrows {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+    @include breakpoint-600 {
+      flex-direction: column;
+    }
+
+    & img {
+      width: 300px;
+
+      @include breakpoint-1300 {
+        width: 250px;
+      }
+
+      @include breakpoint-1100 {
+        width: 300px;
+      }
+
+      @include breakpoint-700 {
+        width: 200px;
+      }
+
+      @include breakpoint-600 {
+        order: 2;
+        margin: 0 auto;
+        width: 70%;
+      }
+
+      @include breakpoint-500 {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      margin-top: 10px;
+    }
+
+    &-name {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: var(--white-color);
+    }
+
+    &-description {
+      margin-bottom: 30px;
+      color: var(--white-color);
+    }
+
+    &-link {
+      @include flex-all-center;
+      width: 200px;
+    }
+  }
+}

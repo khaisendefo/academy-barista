@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=70a77979-e30b-4df8-abe5-88008940b1e0&amp;lang=ru_RU"></script>
+  <title>Курсы</title>
+</head>
+<body class="body">
+  <div class="wrapper">
+    <load src="./html/layout/header.html" />
+    <load src="./html/layout/mobile-menu.html" />
+    <div class="bread-crumbs">
+      <div class="bread-crumbs__container container">
+        <nav class="bread-crumbs__nav">
+          <ul class="bread-crumbs__nav-list">
+            <li class="bread-crumbs__nav-item">
+              <a class="bread-crumbs__nav-link text-regular text-link" href="#">Главная</a>
+            </li>
+            <span class="bread-crumbs__nav-arrow text-regular">></span>
+            <li class="bread-crumbs__nav-item">
+              <a class="bread-crumbs__nav-link bread-crumbs__nav-link-is-active text-regular" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="body">
+      <load src="./html/components/contact/hero.html" />
+      <load src="./html/components/contact/social.html" />
+    </main>
+    <load src="./html/layout/footer.html" />
+    <load src="./html/layout/modal.html" />
+  </div>
+  <script type="module" src="/js/contact.js"></script>
+</body>
+</html>

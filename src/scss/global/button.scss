@@ -47,4 +47,18 @@
       background-color: var(--pine-cone-950);
     }
   }
+
+  &-white {
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    transition: background-color var(--transition);
+
+    &:hover {
+      background-color: var(--pine-cone-100);
+    }
+
+    &:active {
+      background-color: var(--pine-cone-200);
+    }
+  }
 }

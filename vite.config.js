@@ -26,7 +26,9 @@ export default defineConfig({
         masterClassLatterArt: './src/master-class/latte-art.html',
         barnoeDeloVstryakhniIpoday: './src/barnoe-delo/vstryakhni-i-poday.html',
         barnoeDeloKoktelMetodomBild: './src/barnoe-delo/koktel-metodom-bild.html',
-        barnoeDeloKoktelMetodomCtir: './src/barnoe-delo/metod-ctir.html'
+        barnoeDeloKoktelMetodomCtir: './src/barnoe-delo/metod-ctir.html',
+        coursesUpravlyayushchiyKofeyni: './src/courses/upravlyayushchiy-kofeyni.html',
+        masterClassDomashnyayaKofeynya: './src/master-class/domashnyaya-kofeynya.html'
       },
     },
   },

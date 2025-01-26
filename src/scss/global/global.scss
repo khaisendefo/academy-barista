@@ -65,19 +65,19 @@ $breakpoints: (
 }
 
 .logo {
-  width: 78px;
-  height: 85px;
+  width: 68px;
+  height: 86px;
 
   & img {
+    width: 68px;
+
     @include breakpoint-1300 {
-      width: 65px;
-      height: 73px;
+      width: 58px;
     }
   }
 
   @include breakpoint-1300 {
-    width: 65px;
-    height: 73px;
+    height: 73.36px;
   }
 }
 

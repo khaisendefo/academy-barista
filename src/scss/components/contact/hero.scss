@@ -1,0 +1,73 @@
+.hero {
+  display: block;
+
+  &__title {
+    margin-bottom: 30px !important;
+
+    @include breakpoint-900 {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+
+    @include breakpoint-900 {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    padding: 40px;
+    width: 550px;
+
+    @include breakpoint-1200 {
+      height: 100%;
+    }
+
+    @include breakpoint-1100 {
+      width: 450px;
+    }
+
+    @include breakpoint-900 {
+      width: 100%;
+    }
+
+    @include breakpoint-600 {
+      padding: 25px;
+    }
+
+
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 20px;
+  }
+
+  &__item {
+    @include flex-column;
+    gap: 5px;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__maps {
+    overflow: hidden;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    width: 100%;
+
+    @include breakpoint-1200 {
+      height: 100%;
+    }
+  }
+}
