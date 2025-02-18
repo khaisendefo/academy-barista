@@ -23,7 +23,7 @@
                 <h4 class="want-course__card-label text-regular">Стоимость:</h4>
                 <div class="want-course__card-bottom">
                   <div class="want-course__card-row">                     
-                    <span class="want-course__card-number text-regular">6 000 ₽</span>
+                    <span class="want-course__card-number text-regular">10 000 ₽</span>
                   </div>
                 </div>
               </li>
@@ -36,25 +36,25 @@
                 </div>
               </li>
             </ul>
-            <a class="want-course__card-link" href="#">
+            <button class="want-course__card-link open-modal-two" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12v9.4a.6.6 0 0 1-.6.6H4.6a.6.6 0 0 1-.6-.6V12m17.4-5H2.6a.6.6 0 0 0-.6.6v3.8a.6.6 0 0 0 .6.6h18.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6ZM12 22V7m0 0H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7Zm0 0h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7Z"/>
               </svg>
               <span class="text-regular">Купить в подарок</span>
-            </a>
+            </button>
           </div>
         </div>
         <div class="want-course__left">
           <h5 class="want-course__title heading-title-name">Отправь заявку на мастер-класс, <br> а мы расскажем детали!</h5>
           <form class="want-course__form form" action="">
             <label class="want-course__form-label form__label" for="">
-              <input class="want-course__form-input form__input" name="Имя" type="text" placeholder="Ваше имя" required>
+              <input class="want-course__form-input form__input form-name" name="Имя" type="text" placeholder="Ваше имя" required>
             </label>
             <label class="want-course__form-label form__label" for="">
-              <input class="want-course__form-input form__input" name="Телефон" type="tel" placeholder="Телефон" required>
+              <input class="want-course__form-input form__input form-phone" name="Телефон" type="tel" placeholder="Телефон" required>
             </label>
             <label class="want-course__form-label form__label" for="">
-              <input class="want-course__form-input form__input" name="Email" type="email" placeholder="Email" required>
+              <input class="want-course__form-input form__input form-email" name="Email" type="email" placeholder="Email" required>
             </label>
             <textarea class="want-course__form-textarea form__textarea" placeholder="Ваше сообщение" name="Сообщение" id=""></textarea>
             <button class="want-course__form-button form__button button button-brown" type="submit">
@@ -64,9 +64,12 @@
               </svg>  
             </button>
             <div class="want-course__form-chek form__chek">
-              <input class="want-course__form-checkbox form__chek-chekbox" type="checkbox" required>
-              <span class="want-course__form-text form__chek-text text-regular">Согласен на обработку <a href="#">персональных данных</a></span>
+              <div>
+                <input class="want-course__form-checkbox form__chek-chekbox" type="checkbox" required>
+                <span class="want-course__form-text form__chek-text text-regular">Согласен на обработку <a href="#">персональных данных</a></span>
+              </div>
             </div>
+            <input type="hidden" class="form-purpose" value="Тип заявки: Метод Стир">
           </form>
         </div>
       </div>

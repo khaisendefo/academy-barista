@@ -17,7 +17,7 @@ export const yandexMapApi = () => {
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: './assets/icon/marker.svg',
+        iconImageHref: '/assets/marker.svg',
         iconImageSize: [40, 40],
         iconImageOffset: [-25, -50],
       },

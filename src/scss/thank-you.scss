@@ -1,0 +1,115 @@
+@import './mixins';
+@import './base';
+@import './global';
+
+// components
+@import './components/layout/header';
+@import './components/layout/mobile-menu';
+@import './components/layout/footer';
+@import './components/layout/modal';
+
+.thank-you {
+  width: 100%;
+  height: 100%;
+
+  @include breakpoint-500 {
+    padding: 20px 0;
+  }
+
+  &__card {
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 70px 50px;
+    max-width: 850px;
+    text-align: center;
+    background-color: var(--pine-cone-600);
+
+    @include breakpoint-500  {
+      padding: 50px 30px;
+    }
+  }
+
+  &__info {
+    border-bottom: 1px solid var(--light-white);
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--white-color);
+  }
+
+  &__description {
+    color: var(--white-color);
+    opacity: 0.8;
+
+    & br {
+      @include breakpoint-700 {
+        display: none;
+      }
+    }
+  }
+
+  &__social {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: var(--white-color);
+    
+    &-title {
+      & br {
+        @include breakpoint-600 {
+          display: none;
+        }
+      }
+    }
+
+    &-list {
+      @include flex-align-center;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    &-link {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: var(--white-color);
+
+      @include breakpoint-600 {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(50%, -50%);
+
+      @include breakpoint-600 {
+        width: 23px;
+        height: 23px;
+      }
+
+      & path {
+        fill: var(--pine-cone-600);
+      }
+
+      &--telegram {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: var(--white-color);
+  }
+}

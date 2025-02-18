@@ -1,9 +1,6 @@
 // import style
 import '/scss/barista-base.scss';
 
-// impor libs
-import fsLightbox from "fslightbox";
-
 // import base component
 import { headerFixed } from './base/header-fixed';
 import { toggleMenu} from './base/mobile-menu';
@@ -14,6 +11,7 @@ import { teamTabs } from './base/team-tab';
 import { yandexMapApi } from './base/yandex-maps';
 import { modal } from './base/modal';
 import { accordionFooter } from './base/accordion-footer';
+import { sendFormTelegram } from './base/send-form-telegram';
 
 headerFixed();
 toggleMenu();
@@ -24,4 +22,5 @@ moreToggle();
 teamTabs();
 gallerySlider();
 accordionFooter();
+sendFormTelegram();
 

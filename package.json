@@ -31,6 +31,9 @@
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "aos": "^2.3.4",
-    "fslightbox": "^3.4.2"
+    "axios": "^1.7.9",
+    "fslightbox": "^3.4.2",
+    "inputmask": "^5.0.9",
+    "just-validate": "^4.3.0"
   }
 }

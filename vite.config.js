@@ -28,7 +28,12 @@ export default defineConfig({
         barnoeDeloKoktelMetodomBild: './src/barnoe-delo/koktel-metodom-bild.html',
         barnoeDeloKoktelMetodomCtir: './src/barnoe-delo/metod-ctir.html',
         coursesUpravlyayushchiyKofeyni: './src/courses/upravlyayushchiy-kofeyni.html',
-        masterClassDomashnyayaKofeynya: './src/master-class/domashnyaya-kofeynya.html'
+        masterClassDomashnyayaKofeynya: './src/master-class/domashnyaya-kofeynya.html',
+        contact: './src/contact.html',
+        baristaCourses: './src/courses/barista-courses.html',
+        masterClass: './src/courses/master-class.html',
+        barnoeDelo: './src/courses/barnoe-delo.html',
+        thankYou: './src/thank-you.html'
       },
     },
   },
@@ -48,3 +53,5 @@ export default defineConfig({
     }),
   ],
 });
+
+

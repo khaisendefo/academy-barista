@@ -32,6 +32,11 @@
   opacity: 0.1;
 }
 
+.want-course__form-text a {
+  text-decoration: underline;
+  color: var(--dark-color);
+}
+
 .wrapper {
   overflow: hidden;
   width: 100%;
@@ -100,3 +105,4 @@ $breakpoints: (
 .no-scroll {
   overflow: hidden;
 }
+

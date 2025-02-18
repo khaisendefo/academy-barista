@@ -1,22 +1,21 @@
 // import style
 import '/scss/contact.scss';
 
-// impor libs
-import fsLightbox from "fslightbox";
-
 // import base component
+import { yandexMapApi } from './base/yandex-maps';
 import { headerFixed } from './base/header-fixed';
 import { toggleMenu} from './base/mobile-menu';
-import { mobileMenuAccordion } from './base/mobile-menu-accordion';
-import { yandexMapApi } from './base/yandex-maps';
 import { modal } from './base/modal';
+import { mobileMenuAccordion } from './base/mobile-menu-accordion';
 import { accordionFooter } from './base/accordion-footer';
 import { sliderSocial } from './components/contact/slider';
+import { sendFormTelegram } from './base/send-form-telegram';
 
 yandexMapApi();
-modal();
 accordionFooter();
 toggleMenu();
 mobileMenuAccordion();
 headerFixed();
 sliderSocial();
+modal();
+sendFormTelegram();

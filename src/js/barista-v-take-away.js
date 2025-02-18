@@ -13,6 +13,7 @@ import { teamTabs } from './base/team-tab';
 import { yandexMapApi } from './base/yandex-maps';
 import { modal } from './base/modal';
 import { accordionFooter } from './base/accordion-footer';
+import { sendFormTelegram } from './base/send-form-telegram';
 
 headerFixed();
 toggleMenu();
@@ -22,3 +23,4 @@ modal();
 teamTabs();
 gallerySlider();
 accordionFooter();
+sendFormTelegram();
